@@ -3,7 +3,7 @@
 #include "hardware/clocks.h"
 #include <stdint.h>
 #include <stdbool.h>
-
+//josevaldo
 #define SERVO_PIN 22
 #define PWM_FREQ 50.0 // 50Hz para servomotor
 #define DELAY_MS 10   // Atraso para suavizar o movimento
