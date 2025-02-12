@@ -35,3 +35,5 @@ Configure o CMakeLists.txt para compilar o projeto.
 Compile o código com cmake e make.
 
 Conecte o Raspberry Pi Pico no modo BOOTSEL e copie o arquivo .uf2 gerado.
+
+link do video no youtube:https://youtu.be/bCMaF0lTgXM
