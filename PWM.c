@@ -3,8 +3,8 @@
 #include "hardware/clocks.h"
 #include <stdint.h>
 #include <stdbool.h>
-//josevaldo
-#define SERVO_PIN 22
+
+#define SERVO_PIN 22 //Pino do servo
 #define PWM_FREQ 50.0 // 50Hz para servomotor
 #define DELAY_MS 10   // Atraso para suavizar o movimento
 #define STEP_US 5      // Incremento do ciclo ativo
@@ -18,7 +18,8 @@ void config_pwm(uint32_t slice, uint32_t channel, float duty_us, uint32_t wrap) 
 }
 
 int main() {
-    stdio_init_all();
+    stdio_init_all(); 
+
     gpio_set_function(SERVO_PIN, GPIO_FUNC_PWM);
     
     uint32_t slice = pwm_gpio_to_slice_num(SERVO_PIN);
